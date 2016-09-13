@@ -1,0 +1,315 @@
+{
+	"provider_id" : 9,
+	"vdu" : [{
+			"resource_requirements" : {
+				"network_interface_bandwidth_unit" : "",
+				"hypervisor_parameters" : {
+					"version" : "10002|12001|2.6.32-358.el6.x86_64",
+					"type" : "QEMU-KVM"
+				},
+				"memory_unit" : "GB",
+				"network_interface_card_capabilities" : {
+					"SR-IOV" : true,
+					"mirroring" : false
+				},
+				"storage" : {
+					"size_unit" : "GB",
+					"persistence" : false,
+					"size" : 40
+				},
+				"network_interface_bandwidth" : "",
+				"platform_pcie_parameters" : {
+					"SR-IOV" : true,
+					"device_pass_through" : true
+				},
+				"vcpus" : 1,
+				"vswitch_capabilities" : {
+					"version" : "2.0",
+					"type" : "ovs",
+					"overlay_tunnel" : "GRE"
+				},
+				"data_processing_acceleration_library" : "",
+				"memory" : 4,
+				"memory_parameters" : {
+					"large_pages_required" : false,
+					"numa_allocation_policy" : ""
+				},
+				"cpu_support_accelerator" : "AES-NI"
+			},
+			"vm_image" : "http://10.10.1.167:8080/NFS/files/vSA-firewall-53.qcow2",
+			"vm_image_format" : "qcow2",
+			"networking_resources" : "",
+			"monitoring_parameters_specific" : [{
+					"metric" : "vsa_pfsense_cpu",
+					"unit" : "FLOAT",
+					"desc" : "Cpu usage of pfsense"
+				}, {
+					"metric" : "vsa_pfsense_mem",
+					"unit" : "FLOAT",
+					"desc" : "Memory usage of  pfsense"
+				}, {
+					"metric" : "vsa_pfsense_dis",
+					"unit" : "FLOAT",
+					"desc" : "Hardware usage of pfsense"
+				}, {
+					"metric" : "vsa_pfsense_load_avg",
+					"unit" : "FLOAT",
+					"desc" : "Average load of pfsense"
+				}, {
+					"metric" : "vsa_pfsense_pfstate",
+					"unit" : "FLOAT",
+					"desc" : "state table size of pfsense"
+				}, {
+					"metric" : "vsa_pfsense_uptime",
+					"unit" : "STRING",
+					"desc" : "Up time of pfsense"
+				}, {
+					"metric" : "vsa_snort_cpu",
+					"unit" : "FLOAT",
+					"desc" : "Cpu usage of snort"
+				}, {
+					"metric" : "vsa_snort_memory",
+					"unit" : "FLOAT",
+					"desc" : "Memory usage of snort"
+				}, {
+					"metric" : "vsa_snort_pkt_drop_percent",
+					"unit" : "INT",
+					"desc" : "Percent of the dropped packets, generate by snort"
+				}, {
+					"metric" : "vsa_snort_alerts_per_second",
+					"unit" : "INT",
+					"desc" : "The number of alerts per second, that are made by snort"
+				}, {
+					"metric" : "vsa_snort_kpackets_per_sec.realtime",
+					"unit" : "FLOAT",
+					"desc" : "How many thousands of Packets per second in realtime through  vsa, generate by snort"
+				}, {
+					"metric" : "vsa_pfsense_lan_inerrs",
+					"unit" : "INT",
+					"desc" : "Number of errors coming in of the lan interface of pfsense"
+				}, {
+					"metric" : "vsa_pfsense_lan_outerrs",
+					"unit" : "INT",
+					"desc" : "Number of errors coming out of the lan interface of pfsense"
+				}, {
+					"metric" : "vsa_pfsense_wan_inerrs",
+					"unit" : "INT",
+					"desc" : "Number of errors coming in of the wan interface of pfsense"
+				}, {
+					"metric" : "vsa_pfsense_wan_outerrs",
+					"unit" : "INT",
+					"desc" : "Number of errors coming out of the wan interface of pfsense"
+				}, {
+					"metric" : "vsa_pfsense_lan_inbytes",
+					"unit" : "INT",
+					"desc" : "Number of bytes coming in of the lan interface of pfsense"
+				}, {
+					"metric" : "vsa_pfsense_lan_outbytes",
+					"unit" : "INT",
+					"desc" : "Number of bytes coming out of the lan interface of pfsense"
+				}, {
+					"metric" : "vsa_pfsense_wan_inbytes",
+					"unit" : "INT",
+					"desc" : "Number of bytes coming in of the wan interface of pfsense"
+				}, {
+					"metric" : "vsa_pfsense_wan_outbytes",
+					"unit" : "INT",
+					"desc" : "Number of bytes coming out of the wan interface of pfsense"
+				}, {
+					"metric" : "vsa_pfsense_lan_inpkts",
+					"unit" : "INT",
+					"desc" : "Number of packets  coming in of the lan interface of pfsense"
+				}, {
+					"metric" : "vsa_pfsense_lan_outpkts",
+					"unit" : "INT",
+					"desc" : "Number of packets  coming out of the lan interface of pfsense"
+				}, {
+					"metric" : "vsa_pfsense_wan_inpkts",
+					"unit" : "INT",
+					"desc" : "Number of packets  coming in of the wan interface of pfsense"
+				}, {
+					"metric" : "vsa_pfsense_wan_outpkts",
+					"unit" : "INT",
+					"desc" : "Number of packets  coming out of the wan interface of pfsense"
+				}
+			],
+			"wc_notify" : true,
+			"alias" : "high-end",
+			"controller" : true,
+			"connection_points" : [{
+					"vlink_ref" : "vl0",
+					"id" : "CP3ryq"
+				}, {
+					"vlink_ref" : "vl1",
+					"id" : "CP3ggu"
+				}
+			],
+			"id" : "vdu0",
+			"monitoring_parameters" : [{
+					"metric" : "cpuidle",
+					"unit" : "%",
+					"desc" : "CPU Idle"
+				}, {
+					"metric" : "cpu_util",
+					"unit" : "%",
+					"desc" : "CPU Utilization"
+				}, {
+					"metric" : "fsfree",
+					"unit" : "GB",
+					"desc" : "Free Storage"
+				}, {
+					"metric" : "memfree",
+					"unit" : "MB",
+					"desc" : "Free Memory"
+				}, {
+					"metric" : "network_incoming",
+					"unit" : "Mbps",
+					"desc" : "Network Incoming"
+				}, {
+					"metric" : "network_outgoing",
+					"unit" : "Mbps",
+					"desc" : "Network Outgoing"
+				}, {
+					"metric" : "load_shortterm",
+					"unit" : "%",
+					"desc" : "Load Average (1 Minute)"
+				}, {
+					"metric" : "load_midterm",
+					"unit" : "%",
+					"desc" : "Load Average (5 Minutes)"
+				}, {
+					"metric" : "load_longterm",
+					"unit" : "%",
+					"desc" : "Load Average (15 Minutes)"
+				}, {
+					"metric" : "processes_blocked",
+					"unit" : "INT",
+					"desc" : "Blocked Processes"
+				}, {
+					"metric" : "processes_paging",
+					"unit" : "INT",
+					"desc" : "Paging Processes"
+				}, {
+					"metric" : "processes_running",
+					"unit" : "INT",
+					"desc" : "Running Processes"
+				}, {
+					"metric" : "processes_sleeping",
+					"unit" : "INT",
+					"desc" : "Sleeping Processes"
+				}, {
+					"metric" : "processes_stopped",
+					"unit" : "INT",
+					"desc" : "Stopped Processes"
+				}, {
+					"metric" : "processes_zombie",
+					"unit" : "INT",
+					"desc" : "Zombie Processes"
+				}
+			],
+			"vm_image_md5" : "ceded615b2c422297c6d302bda090649",
+			"scale_in_out" : {
+				"minimum" : 1,
+				"maximum" : 1
+			}
+		}
+	],
+	"name" : "vSA firewall 5.3.1",
+	"created_at" : "2016-07-12T11:50:06Z",
+	"modified_at" : "2016-07-12T11:50:06Z",
+	"vlinks" : [{
+			"leaf_requirement" : "Unlimited",
+			"connectivity_type" : "E-LAN",
+			"vdu_reference" : ["vdu0"],
+			"external_access" : true,
+			"connection_points_reference" : ["CP3ryq"],
+			"access" : true,
+			"alias" : "managment",
+			"port_security_enabled" : false,
+			"root_requirement" : "Unlimited",
+			"dhcp" : true,
+			"id" : "vl0",
+			"qos" : ""
+		}, {
+			"leaf_requirement" : "Unlimited",
+			"connectivity_type" : "E-LAN",
+			"vdu_reference" : ["vdu0"],
+			"external_access" : true,
+			"connection_points_reference" : ["CP3ggu"],
+			"access" : true,
+			"alias" : "data",
+			"port_security_enabled" : false,
+			"root_requirement" : "Unlimited",
+			"dhcp" : true,
+			"id" : "vl1",
+			"qos" : ""
+		}
+	],
+	"trade" : true,
+	"descriptor_version" : "1",
+	"deployment_flavours" : [{
+			"vdu_reference" : ["vdu0"],
+			"constraint" : "",
+			"flavour_key" : "gold",
+			"vlink_reference" : ["vl0", "vl1"],
+			"id" : "flavor0",
+			"assurance_parameters" : [{
+					"violation" : [{
+							"interval" : 360,
+							"breaches_count" : 2
+						}
+					],
+					"value" : 10,
+					"penalty" : {
+						"type" : "Discount",
+						"expression" : 10,
+						"validity" : "P10D",
+						"unit" : "%"
+					},
+					"formula" : "cpuidle LT 10",
+					"rel_id" : "param0",
+					"id" : "cpuidle",
+					"unit" : "%"
+				}
+			]
+		}
+	],
+	"version" : "1",
+	"vnf_lifecycle_events" : [{
+			"authentication_username" : "root",
+			"driver" : "ssh",
+			"authentication_type" : "PubKeyAuthentication",
+			"authentication" : "-----BEGIN RSA PRIVATE KEY-----MIIEpQIBAAKCAQEAz9KFVcmn8J0ZQTYGJ8ApdKusiv1J8DIdqellNJDFdVkxhytmBmihSxPiOYCXegixr9PZ/NHjwHxy3pVDqXLbCn8l8TxUOiPF9TXrGpEHUfKtBrtlHeD0bRuAaV4CvToX6YhNfQmKMhTfTmR9UahZRJNij5pHoNprK5fv+atZbBpB9nMCtmkIGpK7D5QeKct6AOIs9TYVQ2O57cKKYd/4cmMiHB/Mhdbg4qDbvTqKWzse33b3hV2NXovS/hLZstQjRyPY93QXvRyVABL3tlPTCXAmzqQjbs6SmUsQKNx68h+dBcffnQtrRlVpSYnKdd4ktCX6bG1CkZdrdAGeEHjghwIDAQABAoIBAQC5K+D2EVn8AF5yRkqxvHyzogt5RDpPNLhNntI4Rg5KgxCoWbjsWOnuVWcqyTMu3vRDsEX5CKMf7UMEpIbHQrl83tHV4mVB8IH//OzgnPyivdIBv5NXTgs79Fc0izlxlYOc53/zuz5RZVubI9qtmY0AlzoordTItBTtoNGH6m8g66AAFergZLi7aAyWzzdBMoueBtRGCbVKlVDuQ/rASPn1L2+FeleVkjN7fU/5HwXvqnRhy+QnSFkypXM61EsxzFWrw7kTvP7Wv8S+OjfapOsomWe9q7RQJWLT+3DQVedKGG5O4Q+n05q2tXnK7WbAEJPGuKJKa50JFJ4NtD75JzEhAoGBAPrjmSUixMeRXi696iN4rIuTbg1+Zt2cGcf47yS3FnwvqB/AG00hJgZyXF+aEUuVwLux20rN8FTkDRIuZgTXx84Lr0jrfyVwL9x1XyT7+3oIPnNvP5N6cb2XLTEKn+5t4Z2K/BZWBLUzFgUXQis8Bqix/g3Oy/5nkmIyiwHmsNmfAoGBANQOU7yiRvbSlxeK7cX6CV4BxYPhZwMqs4pj6aMcvwqnFUyaYpdmirUvP8dh9A3BT8HPcnTXbX/EViqhnCnRQaCXzYT1H+PF4rx/BymxtIkZcauyJdp9/uDfyefMp9qGk2EUXulNmwCg2bKZKtRGW023YWTtCtgskpvEmvfRaGAZAoGBAMc9KahZFSZbJg0+mory0SvCt9oVcIE67ypkYR2qHDwg6IXWXJgC5Byogv0U7/kzgqxL0Rd1tg7kUBEJMdFUvwK9OsVQ51cG4atUtms7hPjjRR0M0tM+oMbsIGJayqlhL5OaBRmD1BdF6429a7nD4JHlUBkNCekNvS0ocEXhOr6HAoGBAJR6c6dg+M9aJPEXFeXJbUWld+cfrEFLZOtBihXrythqpT892kqoQfcbXkz9CSWYdX//AOVO8hzEHJE9F1swagNIR18RQ4L4zAmv6BQJmZ9lcXIHCvoxvoU2LOlhIyaflBIlcU9qR13pQoULOjHoEYYZINjKIQ28J+tpfhiHR84BAoGAZiloGlB+OpFpnzyQvfolGBgNiohNtNaFJH/SEQ62gdnKn9G6/Hpw3/6WKdg26VauX6nvWl4YiY5ZzOnNH1dGaQVyVCD8CyMdptJzaRIaYuiY3jLkKNQXzTmugpyvMw5c8tyqt5HlCKcFCxe0UISjW+omrHYNb5A1Gji1U9wJfx8=-----END RSA PRIVATE KEY-----",
+			"authentication_port" : 22,
+			"flavor_id_ref" : "flavor0",
+			"events" : {
+				"start" : {
+					"command" : "sudo python2.7 /home/tnova/tnova/vsa/vsa.py start",
+					"template_file" : "{\"controller\":\"get_attr[vdu0,PublicIp]\", \"vdu0\":\"get_attr[vdu1,PublicIp]\"}",
+					"template_file_format" : "JSON"
+				},
+				"stop" : {
+					"command" : "sudo python2.7 /home/tnova/tnova/vsa/vsa.py stop",
+					"template_file" : "{}",
+					"template_file_format" : "JSON"
+				}
+			},
+			"vnf_container" : "/home/tnova/container/"
+		}
+	],
+	"billing_model" : {
+		"price" : {
+			"setup" : 10,
+			"max_per_period" : 20,
+			"min_per_period" : 15,
+			"unit" : "EUR"
+		},
+		"model" : "PAYG",
+		"period" : "P10D"
+	},
+	"provider" : "FOKUS",
+	"release" : "T-NOVA",
+	"type" : "vSA",
+	"id" : 2155,
+	"description" : "A Security Appliance (SA) is a device designed to protect computer networks from unwanted traffic."
+}

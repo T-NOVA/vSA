@@ -1,0 +1,620 @@
+ ##################################
+Verbindungen 1
+------------------------------------------------------------
+Client connecting to 192.168.1.2, TCP port 5001
+TCP window size: 85.0 KByte (default)
+------------------------------------------------------------
+[  3] local 192.168.0.2 port 55611 connected with 192.168.1.2 port 5001
+[ ID] Interval       Transfer     Bandwidth
+[  3]  0.0-100.1 sec  1.33 GBytes   115 Mbits/sec
+mod_traffic: characterizing traffic
+1 arg remaining, starting with 'pfsense-test.pcap'
+Ostermann's tcptrace -- version 6.6.7 -- Thu Nov  4, 2004
+
+560150 packets seen, 560150 TCP packets traced
+elapsed wallclock time: 0:00:28.583406, 19597 pkts/sec analyzed
+trace file elapsed time: 0:01:40.068659
+Dumping port statistics into file traffic_byport.dat
+Dumping overall statistics into file traffic_stats.dat
+Plotting performed at 15.000 second intervals
+
+
+Overall Statistics over 100 seconds (0:01:40.068659):
+1452964452 ttl bytes sent, 14529645.000 bytes/second
+1452878952 ttl non-rexmit bytes sent, 14528790.000 bytes/second
+85500 ttl rexmit bytes sent, 855.000 bytes/second
+560150 packets sent, 5601.500 packets/second
+1 connections opened, 0.010 conns/second
+2 dupacks sent, 0.020 dupacks/second
+57 rexmits sent, 0.570 rexmits/second
+average RTT: 34.665 msecs
+##################################
+Verbindungen 2
+------------------------------------------------------------
+Client connecting to 192.168.1.2, TCP port 5001
+TCP window size: 85.0 KByte (default)
+------------------------------------------------------------
+[  4] local 192.168.0.2 port 55613 connected with 192.168.1.2 port 5001
+[  3] local 192.168.0.2 port 55612 connected with 192.168.1.2 port 5001
+[ ID] Interval       Transfer     Bandwidth
+[  3]  0.0-100.0 sec   318 MBytes  26.7 Mbits/sec
+[  4]  0.0-100.0 sec   474 MBytes  39.8 Mbits/sec
+[SUM]  0.0-100.0 sec   793 MBytes  66.5 Mbits/sec
+mod_traffic: characterizing traffic
+1 arg remaining, starting with 'pfsense-test.pcap'
+Ostermann's tcptrace -- version 6.6.7 -- Thu Nov  4, 2004
+
+523436 packets seen, 523436 TCP packets traced
+elapsed wallclock time: 0:00:17.813891, 29383 pkts/sec analyzed
+trace file elapsed time: 0:01:39.995344
+Dumping port statistics into file traffic_byport.dat
+Dumping overall statistics into file traffic_stats.dat
+Plotting performed at 15.000 second intervals
+
+
+Overall Statistics over 99 seconds (0:01:39.995344):
+854515732 ttl bytes sent, 8631472.000 bytes/second
+854343232 ttl non-rexmit bytes sent, 8629730.000 bytes/second
+172500 ttl rexmit bytes sent, 1742.424 bytes/second
+523436 packets sent, 5287.232 packets/second
+2 connections opened, 0.020 conns/second
+31 dupacks sent, 0.313 dupacks/second
+115 rexmits sent, 1.162 rexmits/second
+average RTT: 60.759 msecs
+##################################
+Verbindungen 2 dual
+------------------------------------------------------------
+Server listening on TCP port 5001
+TCP window size: 85.3 KByte (default)
+------------------------------------------------------------
+------------------------------------------------------------
+Client connecting to 192.168.1.2, TCP port 5001
+TCP window size:  128 KByte (default)
+------------------------------------------------------------
+[  6] local 192.168.0.2 port 55615 connected with 192.168.1.2 port 5001
+[  5] local 192.168.0.2 port 55614 connected with 192.168.1.2 port 5001
+[  4] local 192.168.0.2 port 5001 connected with 192.168.1.2 port 39044
+[  7] local 192.168.0.2 port 5001 connected with 192.168.1.2 port 39045
+[ ID] Interval       Transfer     Bandwidth
+[  5]  0.0-100.0 sec   198 MBytes  16.6 Mbits/sec
+[  6]  0.0-100.2 sec   225 MBytes  18.8 Mbits/sec
+[SUM]  0.0-100.2 sec   423 MBytes  35.4 Mbits/sec
+[  7]  0.0-100.6 sec   204 MBytes  17.0 Mbits/sec
+[  4]  0.0-100.7 sec   219 MBytes  18.2 Mbits/sec
+[SUM]  0.0-100.7 sec   423 MBytes  35.2 Mbits/sec
+mod_traffic: characterizing traffic
+1 arg remaining, starting with 'pfsense-test.pcap'
+Ostermann's tcptrace -- version 6.6.7 -- Thu Nov  4, 2004
+
+733692 packets seen, 733692 TCP packets traced
+elapsed wallclock time: 0:00:18.649961, 39340 pkts/sec analyzed
+trace file elapsed time: 0:01:40.626204
+Dumping port statistics into file traffic_byport.dat
+Dumping overall statistics into file traffic_stats.dat
+Plotting performed at 15.000 second intervals
+
+
+Overall Statistics over 100 seconds (0:01:40.626204):
+922933728 ttl bytes sent, 9229338.000 bytes/second
+922132728 ttl non-rexmit bytes sent, 9221327.000 bytes/second
+801000 ttl rexmit bytes sent, 8010.000 bytes/second
+733692 packets sent, 7336.920 packets/second
+4 connections opened, 0.040 conns/second
+98 dupacks sent, 0.980 dupacks/second
+534 rexmits sent, 5.340 rexmits/second
+average RTT: 93.162 msecs
+##################################
+Verbindungen 5
+------------------------------------------------------------
+Client connecting to 192.168.1.2, TCP port 5001
+TCP window size: 85.0 KByte (default)
+------------------------------------------------------------
+[  7] local 192.168.0.2 port 55620 connected with 192.168.1.2 port 5001
+[  3] local 192.168.0.2 port 55616 connected with 192.168.1.2 port 5001
+[  4] local 192.168.0.2 port 55617 connected with 192.168.1.2 port 5001
+[  5] local 192.168.0.2 port 55618 connected with 192.168.1.2 port 5001
+[  6] local 192.168.0.2 port 55619 connected with 192.168.1.2 port 5001
+[ ID] Interval       Transfer     Bandwidth
+[  4]  0.0-100.1 sec   136 MBytes  11.4 Mbits/sec
+[  7]  0.0-100.1 sec   125 MBytes  10.5 Mbits/sec
+[  3]  0.0-100.2 sec   130 MBytes  10.9 Mbits/sec
+[  5]  0.0-100.6 sec   155 MBytes  12.9 Mbits/sec
+[  6]  0.0-100.8 sec   112 MBytes  9.31 Mbits/sec
+[SUM]  0.0-100.8 sec   659 MBytes  54.9 Mbits/sec
+mod_traffic: characterizing traffic
+1 arg remaining, starting with 'pfsense-test.pcap'
+Ostermann's tcptrace -- version 6.6.7 -- Thu Nov  4, 2004
+
+484661 packets seen, 484661 TCP packets traced
+elapsed wallclock time: 0:00:14.511468, 33398 pkts/sec analyzed
+trace file elapsed time: 0:01:40.686395
+Dumping port statistics into file traffic_byport.dat
+Dumping overall statistics into file traffic_stats.dat
+Plotting performed at 15.000 second intervals
+
+
+Overall Statistics over 100 seconds (0:01:40.686395):
+714400004 ttl bytes sent, 7144000.000 bytes/second
+713771504 ttl non-rexmit bytes sent, 7137715.000 bytes/second
+628500 ttl rexmit bytes sent, 6285.000 bytes/second
+484661 packets sent, 4846.610 packets/second
+5 connections opened, 0.050 conns/second
+146 dupacks sent, 1.460 dupacks/second
+419 rexmits sent, 4.190 rexmits/second
+average RTT: 75.656 msecs
+##################################
+Verbindungen 10
+------------------------------------------------------------
+Client connecting to 192.168.1.2, TCP port 5001
+TCP window size: 85.0 KByte (default)
+------------------------------------------------------------
+[  3] local 192.168.0.2 port 55621 connected with 192.168.1.2 port 5001
+[  5] local 192.168.0.2 port 55623 connected with 192.168.1.2 port 5001
+[  6] local 192.168.0.2 port 55624 connected with 192.168.1.2 port 5001
+[  8] local 192.168.0.2 port 55626 connected with 192.168.1.2 port 5001
+[ 12] local 192.168.0.2 port 55630 connected with 192.168.1.2 port 5001
+[  4] local 192.168.0.2 port 55622 connected with 192.168.1.2 port 5001
+[  7] local 192.168.0.2 port 55625 connected with 192.168.1.2 port 5001
+[  9] local 192.168.0.2 port 55627 connected with 192.168.1.2 port 5001
+[ 10] local 192.168.0.2 port 55628 connected with 192.168.1.2 port 5001
+[ 11] local 192.168.0.2 port 55629 connected with 192.168.1.2 port 5001
+[ ID] Interval       Transfer     Bandwidth
+[ 10]  0.0-100.0 sec  56.2 MBytes  4.72 Mbits/sec
+[  9]  0.0-100.0 sec  61.4 MBytes  5.15 Mbits/sec
+[  8]  0.0-100.1 sec  59.4 MBytes  4.98 Mbits/sec
+[ 11]  0.0-100.1 sec  60.1 MBytes  5.04 Mbits/sec
+[ 12]  0.0-100.1 sec  67.5 MBytes  5.66 Mbits/sec
+[  4]  0.0-100.2 sec  68.6 MBytes  5.74 Mbits/sec
+[  5]  0.0-100.4 sec  69.0 MBytes  5.77 Mbits/sec
+[  6]  0.0-100.4 sec  48.8 MBytes  4.07 Mbits/sec
+[  3]  0.0-100.4 sec  64.1 MBytes  5.36 Mbits/sec
+[  7]  0.0-100.5 sec  56.5 MBytes  4.72 Mbits/sec
+[SUM]  0.0-100.5 sec   612 MBytes  51.1 Mbits/sec
+mod_traffic: characterizing traffic
+1 arg remaining, starting with 'pfsense-test.pcap'
+Ostermann's tcptrace -- version 6.6.7 -- Thu Nov  4, 2004
+
+454730 packets seen, 454730 TCP packets traced
+elapsed wallclock time: 0:00:13.757882, 33052 pkts/sec analyzed
+trace file elapsed time: 0:01:40.443732
+Dumping port statistics into file traffic_byport.dat
+Dumping overall statistics into file traffic_stats.dat
+Plotting performed at 15.000 second intervals
+
+
+Overall Statistics over 100 seconds (0:01:40.443732):
+661226740 ttl bytes sent, 6612267.500 bytes/second
+659606740 ttl non-rexmit bytes sent, 6596067.000 bytes/second
+1620000 ttl rexmit bytes sent, 16200.000 bytes/second
+454730 packets sent, 4547.300 packets/second
+10 connections opened, 0.100 conns/second
+365 dupacks sent, 3.650 dupacks/second
+1080 rexmits sent, 10.800 rexmits/second
+average RTT: 85.015 msecs
+##################################
+Verbindungen 20
+------------------------------------------------------------
+Client connecting to 192.168.1.2, TCP port 5001
+TCP window size: 85.0 KByte (default)
+------------------------------------------------------------
+[ 19] local 192.168.0.2 port 55647 connected with 192.168.1.2 port 5001
+[  3] local 192.168.0.2 port 55631 connected with 192.168.1.2 port 5001
+[  4] local 192.168.0.2 port 55632 connected with 192.168.1.2 port 5001
+[  5] local 192.168.0.2 port 55633 connected with 192.168.1.2 port 5001
+[  6] local 192.168.0.2 port 55634 connected with 192.168.1.2 port 5001
+[  7] local 192.168.0.2 port 55635 connected with 192.168.1.2 port 5001
+[  8] local 192.168.0.2 port 55636 connected with 192.168.1.2 port 5001
+[  9] local 192.168.0.2 port 55637 connected with 192.168.1.2 port 5001
+[ 10] local 192.168.0.2 port 55638 connected with 192.168.1.2 port 5001
+[ 11] local 192.168.0.2 port 55639 connected with 192.168.1.2 port 5001
+[ 12] local 192.168.0.2 port 55640 connected with 192.168.1.2 port 5001
+[ 14] local 192.168.0.2 port 55642 connected with 192.168.1.2 port 5001
+[ 13] local 192.168.0.2 port 55641 connected with 192.168.1.2 port 5001
+[ 15] local 192.168.0.2 port 55643 connected with 192.168.1.2 port 5001
+[ 18] local 192.168.0.2 port 55646 connected with 192.168.1.2 port 5001
+[ 16] local 192.168.0.2 port 55644 connected with 192.168.1.2 port 5001
+[ 17] local 192.168.0.2 port 55645 connected with 192.168.1.2 port 5001
+[ 20] local 192.168.0.2 port 55648 connected with 192.168.1.2 port 5001
+[ 21] local 192.168.0.2 port 55649 connected with 192.168.1.2 port 5001
+[ 22] local 192.168.0.2 port 55650 connected with 192.168.1.2 port 5001
+[ ID] Interval       Transfer     Bandwidth
+[  6]  0.0-100.6 sec  30.9 MBytes  2.58 Mbits/sec
+[ 16]  0.0-100.6 sec  34.1 MBytes  2.85 Mbits/sec
+[ 17]  0.0-100.6 sec  30.2 MBytes  2.52 Mbits/sec
+[  5]  0.0-100.6 sec  31.5 MBytes  2.63 Mbits/sec
+[ 20]  0.0-100.7 sec  31.5 MBytes  2.62 Mbits/sec
+[  7]  0.0-100.7 sec  34.8 MBytes  2.90 Mbits/sec
+[ 12]  0.0-100.8 sec  31.8 MBytes  2.64 Mbits/sec
+[ 11]  0.0-100.8 sec  31.5 MBytes  2.62 Mbits/sec
+[  4]  0.0-100.9 sec  31.2 MBytes  2.60 Mbits/sec
+[  3]  0.0-100.9 sec  28.0 MBytes  2.33 Mbits/sec
+[ 10]  0.0-101.0 sec  31.2 MBytes  2.60 Mbits/sec
+[  8]  0.0-101.0 sec  33.1 MBytes  2.75 Mbits/sec
+[ 14]  0.0-101.1 sec  28.6 MBytes  2.38 Mbits/sec
+[ 22]  0.0-101.1 sec  27.8 MBytes  2.30 Mbits/sec
+[ 13]  0.0-101.2 sec  30.1 MBytes  2.50 Mbits/sec
+[ 18]  0.0-101.2 sec  33.6 MBytes  2.79 Mbits/sec
+[ 15]  0.0-101.4 sec  30.1 MBytes  2.49 Mbits/sec
+[  9]  0.0-101.5 sec  28.8 MBytes  2.38 Mbits/sec
+[ 19]  0.0-101.5 sec  32.9 MBytes  2.72 Mbits/sec
+[ 21]  0.0-101.7 sec  29.8 MBytes  2.46 Mbits/sec
+[SUM]  0.0-101.7 sec   622 MBytes  51.3 Mbits/sec
+mod_traffic: characterizing traffic
+1 arg remaining, starting with 'pfsense-test.pcap'
+Ostermann's tcptrace -- version 6.6.7 -- Thu Nov  4, 2004
+
+481635 packets seen, 481635 TCP packets traced
+elapsed wallclock time: 0:00:14.227748, 33851 pkts/sec analyzed
+trace file elapsed time: 0:01:41.630514
+Dumping port statistics into file traffic_byport.dat
+Dumping overall statistics into file traffic_stats.dat
+Plotting performed at 15.000 second intervals
+
+
+Overall Statistics over 101 seconds (0:01:41.630514):
+680302112 ttl bytes sent, 6735664.000 bytes/second
+674953112 ttl non-rexmit bytes sent, 6682704.000 bytes/second
+5349000 ttl rexmit bytes sent, 52960.395 bytes/second
+481635 packets sent, 4768.664 packets/second
+20 connections opened, 0.198 conns/second
+1107 dupacks sent, 10.960 dupacks/second
+3566 rexmits sent, 35.307 rexmits/second
+average RTT: 85.659 msecs
+##################################
+Verbindungen 50
+------------------------------------------------------------
+Client connecting to 192.168.1.2, TCP port 5001
+TCP window size: 85.0 KByte (default)
+------------------------------------------------------------
+[ 52] local 192.168.0.2 port 55700 connected with 192.168.1.2 port 5001
+[  3] local 192.168.0.2 port 55651 connected with 192.168.1.2 port 5001
+[  4] local 192.168.0.2 port 55652 connected with 192.168.1.2 port 5001
+[  5] local 192.168.0.2 port 55653 connected with 192.168.1.2 port 5001
+[  6] local 192.168.0.2 port 55654 connected with 192.168.1.2 port 5001
+[  7] local 192.168.0.2 port 55655 connected with 192.168.1.2 port 5001
+[  9] local 192.168.0.2 port 55657 connected with 192.168.1.2 port 5001
+[  8] local 192.168.0.2 port 55656 connected with 192.168.1.2 port 5001
+[ 10] local 192.168.0.2 port 55658 connected with 192.168.1.2 port 5001
+[ 11] local 192.168.0.2 port 55659 connected with 192.168.1.2 port 5001
+[ 13] local 192.168.0.2 port 55661 connected with 192.168.1.2 port 5001
+[ 12] local 192.168.0.2 port 55660 connected with 192.168.1.2 port 5001
+[ 14] local 192.168.0.2 port 55662 connected with 192.168.1.2 port 5001
+[ 15] local 192.168.0.2 port 55663 connected with 192.168.1.2 port 5001
+[ 16] local 192.168.0.2 port 55664 connected with 192.168.1.2 port 5001
+[ 17] local 192.168.0.2 port 55665 connected with 192.168.1.2 port 5001
+[ 21] local 192.168.0.2 port 55669 connected with 192.168.1.2 port 5001
+[ 20] local 192.168.0.2 port 55668 connected with 192.168.1.2 port 5001
+[ 19] local 192.168.0.2 port 55667 connected with 192.168.1.2 port 5001
+[ 18] local 192.168.0.2 port 55666 connected with 192.168.1.2 port 5001
+[ 23] local 192.168.0.2 port 55671 connected with 192.168.1.2 port 5001
+[ 25] local 192.168.0.2 port 55672 connected with 192.168.1.2 port 5001
+[ 22] local 192.168.0.2 port 55670 connected with 192.168.1.2 port 5001
+[ 24] local 192.168.0.2 port 55673 connected with 192.168.1.2 port 5001
+[ 27] local 192.168.0.2 port 55675 connected with 192.168.1.2 port 5001
+[ 29] local 192.168.0.2 port 55676 connected with 192.168.1.2 port 5001
+[ 26] local 192.168.0.2 port 55674 connected with 192.168.1.2 port 5001
+[ 30] local 192.168.0.2 port 55677 connected with 192.168.1.2 port 5001
+[ 28] local 192.168.0.2 port 55678 connected with 192.168.1.2 port 5001
+[ 32] local 192.168.0.2 port 55680 connected with 192.168.1.2 port 5001
+[ 31] local 192.168.0.2 port 55679 connected with 192.168.1.2 port 5001
+[ 34] local 192.168.0.2 port 55681 connected with 192.168.1.2 port 5001
+[ 36] local 192.168.0.2 port 55683 connected with 192.168.1.2 port 5001
+[ 37] local 192.168.0.2 port 55685 connected with 192.168.1.2 port 5001
+[ 33] local 192.168.0.2 port 55682 connected with 192.168.1.2 port 5001
+[ 39] local 192.168.0.2 port 55687 connected with 192.168.1.2 port 5001
+[ 38] local 192.168.0.2 port 55686 connected with 192.168.1.2 port 5001
+[ 35] local 192.168.0.2 port 55684 connected with 192.168.1.2 port 5001
+[ 40] local 192.168.0.2 port 55688 connected with 192.168.1.2 port 5001
+[ 41] local 192.168.0.2 port 55689 connected with 192.168.1.2 port 5001
+[ 42] local 192.168.0.2 port 55690 connected with 192.168.1.2 port 5001
+[ 43] local 192.168.0.2 port 55691 connected with 192.168.1.2 port 5001
+[ 45] local 192.168.0.2 port 55693 connected with 192.168.1.2 port 5001
+[ 44] local 192.168.0.2 port 55692 connected with 192.168.1.2 port 5001
+[ 48] local 192.168.0.2 port 55695 connected with 192.168.1.2 port 5001
+[ 47] local 192.168.0.2 port 55696 connected with 192.168.1.2 port 5001
+[ 46] local 192.168.0.2 port 55694 connected with 192.168.1.2 port 5001
+[ 50] local 192.168.0.2 port 55698 connected with 192.168.1.2 port 5001
+[ 51] local 192.168.0.2 port 55699 connected with 192.168.1.2 port 5001
+[ 49] local 192.168.0.2 port 55697 connected with 192.168.1.2 port 5001
+[ ID] Interval       Transfer     Bandwidth
+[ 39]  0.0-100.9 sec  10.1 MBytes   842 Kbits/sec
+[ 13]  0.0-101.1 sec  11.1 MBytes   923 Kbits/sec
+[ 49]  0.0-101.2 sec  9.25 MBytes   767 Kbits/sec
+[ 19]  0.0-101.2 sec  9.00 MBytes   746 Kbits/sec
+[  5]  0.0-101.2 sec  9.38 MBytes   777 Kbits/sec
+[ 46]  0.0-101.6 sec  10.4 MBytes   857 Kbits/sec
+[  9]  0.0-101.6 sec  9.00 MBytes   743 Kbits/sec
+[ 45]  0.0-101.7 sec  9.88 MBytes   815 Kbits/sec
+[ 28]  0.0-101.8 sec  9.88 MBytes   814 Kbits/sec
+[ 11]  0.0-101.8 sec  9.50 MBytes   783 Kbits/sec
+[ 48]  0.0-101.9 sec  8.88 MBytes   731 Kbits/sec
+[ 24]  0.0-101.9 sec  10.5 MBytes   864 Kbits/sec
+[ 34]  0.0-101.9 sec  9.00 MBytes   741 Kbits/sec
+[ 29]  0.0-102.0 sec  9.62 MBytes   792 Kbits/sec
+[  4]  0.0-102.0 sec  9.62 MBytes   792 Kbits/sec
+[  7]  0.0-102.0 sec  8.50 MBytes   699 Kbits/sec
+[ 31]  0.0-102.1 sec  9.88 MBytes   812 Kbits/sec
+[ 50]  0.0-102.2 sec  7.62 MBytes   626 Kbits/sec
+[ 32]  0.0-102.4 sec  9.38 MBytes   768 Kbits/sec
+[ 15]  0.0-102.4 sec  9.75 MBytes   799 Kbits/sec
+[ 37]  0.0-102.5 sec  9.38 MBytes   768 Kbits/sec
+[ 12]  0.0-102.5 sec  9.75 MBytes   798 Kbits/sec
+[ 25]  0.0-102.6 sec  10.9 MBytes   889 Kbits/sec
+[ 26]  0.0-102.7 sec  9.38 MBytes   766 Kbits/sec
+[ 33]  0.0-102.7 sec  9.75 MBytes   796 Kbits/sec
+[ 44]  0.0-102.7 sec  9.25 MBytes   756 Kbits/sec
+[ 51]  0.0-102.8 sec  8.25 MBytes   673 Kbits/sec
+[ 52]  0.0-102.8 sec  9.25 MBytes   755 Kbits/sec
+[ 40]  0.0-102.8 sec  9.25 MBytes   755 Kbits/sec
+[ 27]  0.0-102.8 sec  8.88 MBytes   724 Kbits/sec
+[ 10]  0.0-102.8 sec  8.75 MBytes   714 Kbits/sec
+[ 36]  0.0-102.8 sec  10.0 MBytes   816 Kbits/sec
+[ 43]  0.0-102.9 sec  9.62 MBytes   785 Kbits/sec
+[ 22]  0.0-103.0 sec  8.50 MBytes   692 Kbits/sec
+[  8]  0.0-103.0 sec  9.88 MBytes   804 Kbits/sec
+[ 18]  0.0-103.0 sec  9.62 MBytes   784 Kbits/sec
+[ 21]  0.0-103.0 sec  8.12 MBytes   661 Kbits/sec
+[ 41]  0.0-103.1 sec  10.8 MBytes   875 Kbits/sec
+[ 38]  0.0-103.2 sec  9.25 MBytes   752 Kbits/sec
+[ 17]  0.0-103.3 sec  9.50 MBytes   772 Kbits/sec
+[  3]  0.0-103.3 sec  10.2 MBytes   832 Kbits/sec
+[ 35]  0.0-103.4 sec  9.50 MBytes   771 Kbits/sec
+[ 47]  0.0-103.4 sec  8.50 MBytes   689 Kbits/sec
+[  6]  0.0-103.5 sec  8.62 MBytes   699 Kbits/sec
+[ 16]  0.0-103.7 sec  8.62 MBytes   698 Kbits/sec
+[ 23]  0.0-103.8 sec  10.0 MBytes   808 Kbits/sec
+[ 20]  0.0-103.9 sec  11.6 MBytes   938 Kbits/sec
+[ 14]  0.0-104.1 sec  9.25 MBytes   746 Kbits/sec
+[ 30]  0.0-104.1 sec  8.50 MBytes   685 Kbits/sec
+[ 42]  0.0-104.1 sec  9.62 MBytes   775 Kbits/sec
+[SUM]  0.0-104.1 sec   473 MBytes  38.1 Mbits/sec
+mod_traffic: characterizing traffic
+1 arg remaining, starting with 'pfsense-test.pcap'
+Ostermann's tcptrace -- version 6.6.7 -- Thu Nov  4, 2004
+
+423103 packets seen, 423103 TCP packets traced
+elapsed wallclock time: 0:00:11.566091, 36581 pkts/sec analyzed
+trace file elapsed time: 0:01:44.082554
+Dumping port statistics into file traffic_byport.dat
+Dumping overall statistics into file traffic_stats.dat
+Plotting performed at 15.000 second intervals
+
+
+Overall Statistics over 104 seconds (0:01:44.082554):
+539539020 ttl bytes sent, 5187875.000 bytes/second
+516040020 ttl non-rexmit bytes sent, 4961923.500 bytes/second
+23499000 ttl rexmit bytes sent, 225951.922 bytes/second
+423103 packets sent, 4068.298 packets/second
+50 connections opened, 0.481 conns/second
+3478 dupacks sent, 33.442 dupacks/second
+15666 rexmits sent, 150.635 rexmits/second
+average RTT: 114.791 msecs
+##################################
+Verbindungen 100
+------------------------------------------------------------
+Client connecting to 192.168.1.2, TCP port 5001
+TCP window size: 85.0 KByte (default)
+------------------------------------------------------------
+[ 85] local 192.168.0.2 port 55783 connected with 192.168.1.2 port 5001
+[  4] local 192.168.0.2 port 55702 connected with 192.168.1.2 port 5001
+[  5] local 192.168.0.2 port 55703 connected with 192.168.1.2 port 5001
+[  7] local 192.168.0.2 port 55705 connected with 192.168.1.2 port 5001
+[  6] local 192.168.0.2 port 55704 connected with 192.168.1.2 port 5001
+[  8] local 192.168.0.2 port 55706 connected with 192.168.1.2 port 5001
+[  9] local 192.168.0.2 port 55707 connected with 192.168.1.2 port 5001
+[ 10] local 192.168.0.2 port 55708 connected with 192.168.1.2 port 5001
+[ 15] local 192.168.0.2 port 55713 connected with 192.168.1.2 port 5001
+[ 12] local 192.168.0.2 port 55709 connected with 192.168.1.2 port 5001
+[ 13] local 192.168.0.2 port 55711 connected with 192.168.1.2 port 5001
+[ 14] local 192.168.0.2 port 55712 connected with 192.168.1.2 port 5001
+[ 11] local 192.168.0.2 port 55710 connected with 192.168.1.2 port 5001
+[ 17] local 192.168.0.2 port 55714 connected with 192.168.1.2 port 5001
+[ 16] local 192.168.0.2 port 55715 connected with 192.168.1.2 port 5001
+[ 18] local 192.168.0.2 port 55716 connected with 192.168.1.2 port 5001
+[ 19] local 192.168.0.2 port 55717 connected with 192.168.1.2 port 5001
+[ 20] local 192.168.0.2 port 55718 connected with 192.168.1.2 port 5001
+[ 21] local 192.168.0.2 port 55719 connected with 192.168.1.2 port 5001
+[ 22] local 192.168.0.2 port 55720 connected with 192.168.1.2 port 5001
+[ 23] local 192.168.0.2 port 55721 connected with 192.168.1.2 port 5001
+[ 24] local 192.168.0.2 port 55722 connected with 192.168.1.2 port 5001
+[ 25] local 192.168.0.2 port 55723 connected with 192.168.1.2 port 5001
+[ 27] local 192.168.0.2 port 55725 connected with 192.168.1.2 port 5001
+[ 26] local 192.168.0.2 port 55724 connected with 192.168.1.2 port 5001
+[ 28] local 192.168.0.2 port 55726 connected with 192.168.1.2 port 5001
+[ 29] local 192.168.0.2 port 55727 connected with 192.168.1.2 port 5001
+[ 30] local 192.168.0.2 port 55728 connected with 192.168.1.2 port 5001
+[ 31] local 192.168.0.2 port 55729 connected with 192.168.1.2 port 5001
+[ 33] local 192.168.0.2 port 55731 connected with 192.168.1.2 port 5001
+[ 32] local 192.168.0.2 port 55730 connected with 192.168.1.2 port 5001
+[ 34] local 192.168.0.2 port 55732 connected with 192.168.1.2 port 5001
+[ 35] local 192.168.0.2 port 55733 connected with 192.168.1.2 port 5001
+[ 36] local 192.168.0.2 port 55734 connected with 192.168.1.2 port 5001
+[ 38] local 192.168.0.2 port 55735 connected with 192.168.1.2 port 5001
+[ 37] local 192.168.0.2 port 55736 connected with 192.168.1.2 port 5001
+[ 39] local 192.168.0.2 port 55737 connected with 192.168.1.2 port 5001
+[ 40] local 192.168.0.2 port 55738 connected with 192.168.1.2 port 5001
+[ 41] local 192.168.0.2 port 55739 connected with 192.168.1.2 port 5001
+[ 42] local 192.168.0.2 port 55740 connected with 192.168.1.2 port 5001
+[ 43] local 192.168.0.2 port 55741 connected with 192.168.1.2 port 5001
+[ 44] local 192.168.0.2 port 55742 connected with 192.168.1.2 port 5001
+[ 46] local 192.168.0.2 port 55744 connected with 192.168.1.2 port 5001
+[ 47] local 192.168.0.2 port 55745 connected with 192.168.1.2 port 5001
+[ 45] local 192.168.0.2 port 55743 connected with 192.168.1.2 port 5001
+[ 48] local 192.168.0.2 port 55746 connected with 192.168.1.2 port 5001
+[ 51] local 192.168.0.2 port 55749 connected with 192.168.1.2 port 5001
+[ 50] local 192.168.0.2 port 55748 connected with 192.168.1.2 port 5001
+[ 49] local 192.168.0.2 port 55747 connected with 192.168.1.2 port 5001
+[ 52] local 192.168.0.2 port 55750 connected with 192.168.1.2 port 5001
+[ 53] local 192.168.0.2 port 55751 connected with 192.168.1.2 port 5001
+[ 54] local 192.168.0.2 port 55752 connected with 192.168.1.2 port 5001
+[ 55] local 192.168.0.2 port 55753 connected with 192.168.1.2 port 5001
+[ 56] local 192.168.0.2 port 55754 connected with 192.168.1.2 port 5001
+[ 57] local 192.168.0.2 port 55755 connected with 192.168.1.2 port 5001
+[ 59] local 192.168.0.2 port 55757 connected with 192.168.1.2 port 5001
+[ 58] local 192.168.0.2 port 55756 connected with 192.168.1.2 port 5001
+[ 60] local 192.168.0.2 port 55758 connected with 192.168.1.2 port 5001
+[ 61] local 192.168.0.2 port 55759 connected with 192.168.1.2 port 5001
+[ 62] local 192.168.0.2 port 55760 connected with 192.168.1.2 port 5001
+[ 63] local 192.168.0.2 port 55761 connected with 192.168.1.2 port 5001
+[ 64] local 192.168.0.2 port 55762 connected with 192.168.1.2 port 5001
+[ 65] local 192.168.0.2 port 55763 connected with 192.168.1.2 port 5001
+[ 67] local 192.168.0.2 port 55765 connected with 192.168.1.2 port 5001
+[ 68] local 192.168.0.2 port 55766 connected with 192.168.1.2 port 5001
+[ 66] local 192.168.0.2 port 55764 connected with 192.168.1.2 port 5001
+[ 70] local 192.168.0.2 port 55768 connected with 192.168.1.2 port 5001
+[ 69] local 192.168.0.2 port 55767 connected with 192.168.1.2 port 5001
+[ 71] local 192.168.0.2 port 55769 connected with 192.168.1.2 port 5001
+[ 73] local 192.168.0.2 port 55770 connected with 192.168.1.2 port 5001
+[ 74] local 192.168.0.2 port 55772 connected with 192.168.1.2 port 5001
+[ 72] local 192.168.0.2 port 55771 connected with 192.168.1.2 port 5001
+[ 75] local 192.168.0.2 port 55773 connected with 192.168.1.2 port 5001
+[ 76] local 192.168.0.2 port 55774 connected with 192.168.1.2 port 5001
+[ 77] local 192.168.0.2 port 55775 connected with 192.168.1.2 port 5001
+[ 78] local 192.168.0.2 port 55776 connected with 192.168.1.2 port 5001
+[ 79] local 192.168.0.2 port 55777 connected with 192.168.1.2 port 5001
+[ 80] local 192.168.0.2 port 55778 connected with 192.168.1.2 port 5001
+[ 81] local 192.168.0.2 port 55779 connected with 192.168.1.2 port 5001
+[ 83] local 192.168.0.2 port 55781 connected with 192.168.1.2 port 5001
+[ 82] local 192.168.0.2 port 55780 connected with 192.168.1.2 port 5001
+[ 84] local 192.168.0.2 port 55782 connected with 192.168.1.2 port 5001
+[ 86] local 192.168.0.2 port 55784 connected with 192.168.1.2 port 5001
+[ 87] local 192.168.0.2 port 55785 connected with 192.168.1.2 port 5001
+[ 88] local 192.168.0.2 port 55786 connected with 192.168.1.2 port 5001
+[ 89] local 192.168.0.2 port 55787 connected with 192.168.1.2 port 5001
+[ 90] local 192.168.0.2 port 55788 connected with 192.168.1.2 port 5001
+[ 91] local 192.168.0.2 port 55789 connected with 192.168.1.2 port 5001
+[ 92] local 192.168.0.2 port 55790 connected with 192.168.1.2 port 5001
+[ 93] local 192.168.0.2 port 55791 connected with 192.168.1.2 port 5001
+[ 94] local 192.168.0.2 port 55792 connected with 192.168.1.2 port 5001
+[ 95] local 192.168.0.2 port 55793 connected with 192.168.1.2 port 5001
+[ 96] local 192.168.0.2 port 55794 connected with 192.168.1.2 port 5001
+[ 97] local 192.168.0.2 port 55795 connected with 192.168.1.2 port 5001
+[ 98] local 192.168.0.2 port 55796 connected with 192.168.1.2 port 5001
+[ 99] local 192.168.0.2 port 55797 connected with 192.168.1.2 port 5001
+[100] local 192.168.0.2 port 55798 connected with 192.168.1.2 port 5001
+[101] local 192.168.0.2 port 55799 connected with 192.168.1.2 port 5001
+[102] local 192.168.0.2 port 55800 connected with 192.168.1.2 port 5001
+[  3] local 192.168.0.2 port 55701 connected with 192.168.1.2 port 5001
+[ ID] Interval       Transfer     Bandwidth
+[ 89]  0.0-101.1 sec  5.88 MBytes   487 Kbits/sec
+[ 75]  0.0-101.2 sec  5.62 MBytes   466 Kbits/sec
+[  9]  0.0-101.3 sec  5.62 MBytes   466 Kbits/sec
+[ 17]  0.0-101.6 sec  5.38 MBytes   444 Kbits/sec
+[ 32]  0.0-101.6 sec  6.75 MBytes   557 Kbits/sec
+[ 65]  0.0-101.6 sec  5.88 MBytes   485 Kbits/sec
+[ 57]  0.0-101.7 sec  5.62 MBytes   464 Kbits/sec
+[101]  0.0-101.7 sec  5.50 MBytes   454 Kbits/sec
+[ 54]  0.0-101.7 sec  5.00 MBytes   412 Kbits/sec
+[ 14]  0.0-101.7 sec  5.62 MBytes   464 Kbits/sec
+[ 25]  0.0-101.8 sec  5.62 MBytes   464 Kbits/sec
+[ 50]  0.0-101.8 sec  5.50 MBytes   453 Kbits/sec
+[ 53]  0.0-101.8 sec  4.88 MBytes   402 Kbits/sec
+[ 82]  0.0-101.8 sec  5.00 MBytes   412 Kbits/sec
+[ 30]  0.0-101.8 sec  5.62 MBytes   464 Kbits/sec
+[ 51]  0.0-101.8 sec  5.75 MBytes   474 Kbits/sec
+[ 37]  0.0-101.8 sec  5.50 MBytes   453 Kbits/sec
+[ 66]  0.0-101.9 sec  4.62 MBytes   381 Kbits/sec
+[ 33]  0.0-101.9 sec  4.50 MBytes   370 Kbits/sec
+[ 13]  0.0-102.0 sec  5.75 MBytes   473 Kbits/sec
+[ 24]  0.0-102.0 sec  5.62 MBytes   462 Kbits/sec
+[ 83]  0.0-102.1 sec  5.88 MBytes   483 Kbits/sec
+[ 15]  0.0-102.1 sec  6.12 MBytes   503 Kbits/sec
+[ 44]  0.0-102.1 sec  4.88 MBytes   400 Kbits/sec
+[ 49]  0.0-102.1 sec  4.75 MBytes   390 Kbits/sec
+[ 56]  0.0-102.2 sec  5.62 MBytes   462 Kbits/sec
+[ 94]  0.0-102.3 sec  5.62 MBytes   461 Kbits/sec
+[ 73]  0.0-102.3 sec  6.50 MBytes   533 Kbits/sec
+[  6]  0.0-102.4 sec  5.62 MBytes   461 Kbits/sec
+[ 26]  0.0-102.4 sec  5.12 MBytes   420 Kbits/sec
+[ 40]  0.0-102.4 sec  5.62 MBytes   461 Kbits/sec
+[ 12]  0.0-102.4 sec  6.12 MBytes   502 Kbits/sec
+[ 27]  0.0-102.4 sec  5.50 MBytes   450 Kbits/sec
+[ 41]  0.0-102.4 sec  5.88 MBytes   481 Kbits/sec
+[ 98]  0.0-102.5 sec  4.38 MBytes   358 Kbits/sec
+[ 47]  0.0-102.5 sec  4.25 MBytes   348 Kbits/sec
+[ 23]  0.0-102.5 sec  6.00 MBytes   491 Kbits/sec
+[ 45]  0.0-102.5 sec  5.75 MBytes   471 Kbits/sec
+[ 34]  0.0-102.5 sec  5.38 MBytes   440 Kbits/sec
+[ 62]  0.0-102.5 sec  6.62 MBytes   542 Kbits/sec
+[ 18]  0.0-102.5 sec  5.38 MBytes   440 Kbits/sec
+[ 91]  0.0-102.6 sec  5.88 MBytes   480 Kbits/sec
+[ 20]  0.0-102.7 sec  5.75 MBytes   470 Kbits/sec
+[ 52]  0.0-102.7 sec  5.62 MBytes   459 Kbits/sec
+[ 96]  0.0-102.7 sec  6.25 MBytes   510 Kbits/sec
+[ 70]  0.0-102.8 sec  5.25 MBytes   428 Kbits/sec
+[ 78]  0.0-102.8 sec  5.00 MBytes   408 Kbits/sec
+[100]  0.0-102.9 sec  5.62 MBytes   459 Kbits/sec
+[ 60]  0.0-102.9 sec  5.50 MBytes   448 Kbits/sec
+[  5]  0.0-102.9 sec  6.12 MBytes   499 Kbits/sec
+[ 72]  0.0-102.9 sec  5.12 MBytes   418 Kbits/sec
+[ 99]  0.0-102.9 sec  5.12 MBytes   418 Kbits/sec
+[ 74]  0.0-103.0 sec  6.12 MBytes   499 Kbits/sec
+[102]  0.0-103.0 sec  4.75 MBytes   387 Kbits/sec
+[ 92]  0.0-103.0 sec  4.75 MBytes   387 Kbits/sec
+[ 42]  0.0-103.0 sec  7.12 MBytes   580 Kbits/sec
+[ 48]  0.0-103.0 sec  5.62 MBytes   458 Kbits/sec
+[ 97]  0.0-103.0 sec  4.25 MBytes   346 Kbits/sec
+[ 19]  0.0-103.0 sec  5.12 MBytes   417 Kbits/sec
+[ 46]  0.0-103.1 sec  5.25 MBytes   427 Kbits/sec
+[ 84]  0.0-103.1 sec  4.88 MBytes   397 Kbits/sec
+[ 79]  0.0-103.1 sec  5.88 MBytes   478 Kbits/sec
+[ 38]  0.0-103.1 sec  4.12 MBytes   336 Kbits/sec
+[ 69]  0.0-103.1 sec  4.88 MBytes   397 Kbits/sec
+[ 64]  0.0-103.1 sec  5.12 MBytes   417 Kbits/sec
+[ 67]  0.0-103.2 sec  5.50 MBytes   447 Kbits/sec
+[ 29]  0.0-103.2 sec  5.50 MBytes   447 Kbits/sec
+[ 59]  0.0-103.2 sec  5.38 MBytes   437 Kbits/sec
+[ 39]  0.0-103.3 sec  5.50 MBytes   447 Kbits/sec
+[ 61]  0.0-103.3 sec  6.25 MBytes   508 Kbits/sec
+[ 36]  0.0-103.3 sec  5.75 MBytes   467 Kbits/sec
+[  7]  0.0-103.4 sec  5.88 MBytes   477 Kbits/sec
+[ 11]  0.0-103.4 sec  5.88 MBytes   477 Kbits/sec
+[ 88]  0.0-103.4 sec  4.88 MBytes   395 Kbits/sec
+[ 80]  0.0-103.4 sec  5.00 MBytes   405 Kbits/sec
+[ 93]  0.0-103.4 sec  4.88 MBytes   395 Kbits/sec
+[ 10]  0.0-103.5 sec  5.50 MBytes   446 Kbits/sec
+[ 90]  0.0-103.5 sec  6.00 MBytes   486 Kbits/sec
+[  8]  0.0-103.5 sec  5.62 MBytes   456 Kbits/sec
+[ 35]  0.0-103.5 sec  5.62 MBytes   456 Kbits/sec
+[ 55]  0.0-103.5 sec  5.00 MBytes   405 Kbits/sec
+[  3]  0.0-103.5 sec  4.25 MBytes   344 Kbits/sec
+[ 58]  0.0-103.6 sec  5.62 MBytes   456 Kbits/sec
+[ 21]  0.0-103.6 sec  4.88 MBytes   395 Kbits/sec
+[ 95]  0.0-103.6 sec  6.75 MBytes   547 Kbits/sec
+[ 85]  0.0-103.6 sec  4.62 MBytes   374 Kbits/sec
+[ 31]  0.0-103.6 sec  6.25 MBytes   506 Kbits/sec
+[ 71]  0.0-103.7 sec  6.12 MBytes   496 Kbits/sec
+[ 81]  0.0-103.7 sec  5.50 MBytes   445 Kbits/sec
+[ 68]  0.0-103.7 sec  6.00 MBytes   485 Kbits/sec
+[ 76]  0.0-103.7 sec  6.00 MBytes   485 Kbits/sec
+[ 77]  0.0-103.7 sec  5.75 MBytes   465 Kbits/sec
+[ 43]  0.0-103.7 sec  6.12 MBytes   495 Kbits/sec
+[ 28]  0.0-103.7 sec  5.12 MBytes   414 Kbits/sec
+[ 22]  0.0-103.8 sec  5.25 MBytes   424 Kbits/sec
+[ 16]  0.0-103.8 sec  4.38 MBytes   354 Kbits/sec
+[ 86]  0.0-103.9 sec  6.00 MBytes   485 Kbits/sec
+[ 63]  0.0-103.9 sec  6.12 MBytes   495 Kbits/sec
+[ 87]  0.0-103.9 sec  4.75 MBytes   384 Kbits/sec
+[  4]  0.0-103.9 sec  5.88 MBytes   474 Kbits/sec
+[SUM]  0.0-103.9 sec   549 MBytes  44.3 Mbits/sec
+mod_traffic: characterizing traffic
+1 arg remaining, starting with 'pfsense-test.pcap'
+Ostermann's tcptrace -- version 6.6.7 -- Thu Nov  4, 2004
+
+559724 packets seen, 559722 TCP packets traced
+elapsed wallclock time: 0:00:14.211323, 39385 pkts/sec analyzed
+trace file elapsed time: 0:01:43.903831
+Dumping port statistics into file traffic_byport.dat
+Dumping overall statistics into file traffic_stats.dat
+Plotting performed at 15.000 second intervals
+
+
+Overall Statistics over 103 seconds (0:01:43.903831):
+664979528 ttl bytes sent, 6456112.000 bytes/second
+603119108 ttl non-rexmit bytes sent, 5855525.500 bytes/second
+61860420 ttl rexmit bytes sent, 600586.625 bytes/second
+559722 packets sent, 5434.194 packets/second
+100 connections opened, 0.971 conns/second
+4667 dupacks sent, 45.311 dupacks/second
+41243 rexmits sent, 400.417 rexmits/second
+average RTT: 100.771 msecs

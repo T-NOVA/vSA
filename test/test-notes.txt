@@ -1,0 +1,29 @@
+1: on cnode1 t-nova / t-n0v@
+	sudo /sbin/iptables -I FORWARD 1 -j ACCEPT
+2:on attacker check ping to pxaas
+	ping 192.168.11.31
+3: on pfsense
+	/home/tnova/tnova/scripts: ./create_rules.sh wan 3000
+4:on pxaas
+	iperf -s
+5:on attacker
+	/home/tnova/tnova/test  ./auto-test-firewall.sh 192.168.11.31  > test_fw_no_rules_2.log
+6:on attacker
+	/home/tnova/tnova/test  python extraction.py test_with_3000_fw_rules.log > test_fw_no_rules_2.csv
+	
+	
+#!/bin/bash          
+echo ###########
+./auto-test-firewall.sh 192.168.11.31  > test_fw_3000_2.log
+./auto-test-firewall.sh 192.168.11.31  > test_fw_3000_3.log
+./auto-test-firewall.sh 192.168.11.31  > test_fw_3000_4.log
+./auto-test-firewall.sh 192.168.11.31  > test_fw_3000_5.log
+echo #####done###### 
+
+
+top -d 2 | grep 'Mem\|CPU'
+
+
+while sleep 15; do top -d 2 | grep 'Mem\|CPU:' >> cpu-mem1.txt; done
+
+top |  pcregrep -M  'Mem.*(\n|.)*CPU:'
