@@ -20,7 +20,7 @@ service collectd restart
 
 
 # Hack to prepend local DNS
-sed -i '' "1s/^/nameserver 10.30.0.11\\${cr}/" /etc/resolv.conf
+#sed -i '' "1s/^/nameserver 10.30.0.11\\${cr}/" /etc/resolv.conf
 
 
 /usr/bin/touch /var/log/`/bin/date "+%H-%M-%S"`-try_to_call_tenor.log
