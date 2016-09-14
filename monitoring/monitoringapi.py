@@ -14,7 +14,7 @@ def get_uuid():
 
 class MonitoringAPI(object):
 
-    def __init__(self, host='emonitoring.sisyphus.mnl', port=8086, username='stats_user', password='tnova', db_name='statsdb'):
+    def __init__(self, host='monitoring', port=8086, username='stats_user', password='tnova', db_name='statsdb'):
         self.client = InfluxDBClient(host, port, username, password, db_name)
 
 
