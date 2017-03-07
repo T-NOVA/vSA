@@ -48,7 +48,10 @@ The vSA can be started/stopped/restarted with the command:
 ### configuring monitoring ###
 
 1.Install "collectd5" in vSA using command "pkg install collectd5",then run command "rehash"
+
 2.Add collectd_enable="YES" to file /etc/rc.conf.local
+
 3.Change /usr/local/etc/collectd.conf      # collectd.conf is backed up in /home/tnova/tnova/conf
+
 4.Add /usr/local/etc/rc.d/update_uuid.sh    # It gets instance uuid, stores it to a file, updates and restarts collectd, adds our local DNS on top of /etc/resolv.conf.  update_uuid.sh is backed up in /home/tnova/tnova/conf
 
